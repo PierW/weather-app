@@ -140,14 +140,14 @@
                 alt=""
               />
               <div class="flex gap-2 flex-1 justify-end">
-                <p>{{ Math.round(day.temp.min) }}&deg;</p>
-                <p>{{ Math.round(day.temp.max) }}&deg;</p>
+                <p class="text-blue-400">{{ Math.round(day.temp.min) }}&deg;</p>
+                <p class="text-red-400">{{ Math.round(day.temp.max) }}&deg;</p>
               </div>
             </div>
           </div>
         </div>
         <!-- Pulsante Eliminazione -->
-        <div class="flex text-white gap-4 py-12 items-center hover:text-red-600 duration-150 cursor-pointer" @click="deleteLocation">
+        <div v-if="!route.query.preview" class="flex text-white gap-4 py-12 items-center hover:text-red-600 duration-150 cursor-pointer" @click="deleteLocation">
             <i class="fa-solid fa-trash"></i>
             <p>Elimina Location</p>
         </div>

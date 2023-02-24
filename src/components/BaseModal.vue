@@ -16,7 +16,7 @@ defineProps({
                     <div v-if="showModal" class="p-4 bg-white mt-32 max-w-screen-md self-start">
                         <slot/>
                         <button @click="$emit('close-modal')" class="text-white mt-8 py-2 px-6 bg-weather-primary">
-                            Close
+                            Chiudi
                         </button>
                     </div>
                 </Transition>

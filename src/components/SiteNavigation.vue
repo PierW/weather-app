@@ -46,7 +46,7 @@
              <RouterLink :to="{name : 'home'}">
                  <div class="flex items-center gap-3 flex-1">
                     <i class="fa-solid fa-sun text-2xl"></i>
-                    <strong class="text-2xl">The Local Weather</strong>
+                    <strong class="text-2xl">Meteo Wallet</strong>
                  </div>
              </RouterLink>
 
@@ -57,33 +57,28 @@
 
              <BaseModal :show-modal="showModal" @close-modal="toggleModal">
                 <div class="text-black">
-                    <h1 class="text-2xl mb-1">About:</h1>
+                    <h1 class="text-2xl mb-1">Info:</h1>
                     <p class="mb-4">
-                        The Local Weather allows you to track the current and
-                        future weather of cities of your choosing.
+                        Meteo Wallet ti consente di tenere traccia delle previsioni meteorologiche delle città da te scelte.
                     </p>
-                    <h2 class="text-2xl">How it works:</h2>
+                    <h2 class="text-2xl">Come funziona:</h2>
                     <ol class="list-decimal list-inside mb-4">
                         <li>
-                        Search for your city by entering the name into the
-                        search bar.
+                        Cerca la tua città tramite l'apposito input di ricerca.
                         </li>
                         <li>
-                        Select a city within the results, this will take
-                        you to the current weather for your selection.
+                        Seleziona una città tra i risultati per vedere le previsioni.
                         </li>
                         <li>
-                        Track the city by clicking on the "+" icon in the
-                        top right. This will save the city to view at a
-                        later time on the home page.
+                        Clicca sull'icona "+" in alto a destra per aggiungere la città
+                        al wallet in modo da non doverla ricercare.
                         </li>
                     </ol>
 
-                    <h2 class="text-2xl">Removing a city</h2>
+                    <h2 class="text-2xl">Rimuovi una città</h2>
                     <p>
-                        If you no longer wish to track a city, simply select
-                        the city within the home page. At the bottom of the
-                        page, there will be am option to delete the city.
+                        Se vuoi eliminare una città dal tuo wallet basta cliccare
+                        sul nome della città dalla homepage e cliccare sull'apposito pulsante in fondo alla pagina.
                     </p>
                 </div>
             </BaseModal>

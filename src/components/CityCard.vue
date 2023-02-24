@@ -21,10 +21,10 @@
         {{ Math.round(city.weather.main.temp) }}&deg;
       </p>
       <div class="flex gap-2">
-        <span class="text-xs">
+        <span class="text-xs text-blue-400">
           {{ Math.round(city.weather.main.temp_min) }}&deg;
         </span>
-        <span class="text-xs">
+        <span class="text-xs text-red-400">
           {{ Math.round(city.weather.main.temp_max) }}&deg;
         </span>
       </div>
