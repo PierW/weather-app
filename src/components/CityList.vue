@@ -45,9 +45,10 @@
       });
     };
 
+    // Ottengo dati da Netlify functions
     const getNtlData = async (e) => {
       e.preventDefault();
-      const res = await fetch('/.netlify/functions/openWeather');
+      const res = await fetch('/api/openWeather');
 
       if(!res.ok){
         console.log(res);
@@ -72,3 +73,12 @@
   <pre class="output"></pre>
   <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" @click="getNtlData">Clicca</button>
 </template>
+
+<style scoped>
+.output{
+  overflow: scroll;
+  max-height: 300px;
+  background: #000;
+  color: #a8a8a8;
+}
+</style>
