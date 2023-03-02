@@ -2,6 +2,7 @@
   "name": "vue-weather-app",
   "version": "1.0.0",
   "description": "App realizzata con Vue + Tailwind CSS per previsioni meteo su base oraria e settimanale.",
+  "type":"module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
